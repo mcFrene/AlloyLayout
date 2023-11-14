@@ -9,7 +9,7 @@ document.querySelector('.burger-menu').addEventListener('click', () => {
 });
 
 window.addEventListener('resize', () => {
-    document.querySelector('..header-nav-burger').classList.remove('.header-nav-burger--active');
+    document.querySelector('.header-nav-burger').classList.remove('.header-nav-burger--active');
     let body = document.querySelector('body');
     if(body.style.overflowY)
         body.style.overflowY = "";
