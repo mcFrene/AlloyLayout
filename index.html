@@ -12,16 +12,36 @@
     <header class="section-outer">
         <div class="section-inner">
             <nav class="header-nav">
-                <a href="#" class="header-nav__link">NEWS</a>
-                <a href="#" class="header-nav__link">FIGHTERS</a>
-                <a href="#" class="header-nav__link">FEATURES</a>
-                <a href="#" class="header-nav__link"><img class="header-nav__img" src="./img/header-logo.png" alt=""></a>
-                <a href="#" class="header-nav__link">GUIDES</a>
-                <a href="#" class="header-nav__link">MEDIA</a>
-                <a href="#" class="header-nav__link">ESPORTS</a>
-                <a href="#" class="header-nav__link">BUY NOW</a>
+                <div class="header-nav-l">
+                    <div class="burger-menu">
+                        <span class="burger-menu__line"></span>
+                        <span class="burger-menu__line"></span>
+                        <span class="burger-menu__line"></span>
+                    </div>
+                    <a href="#" class="header-nav__link">NEWS</a>
+                    <a href="#" class="header-nav__link">FIGHTERS</a>
+                    <a href="#" class="header-nav__link">FEATURES</a>
+                    <a href="#" class="header-nav__link">GUIDES</a>
+                </div>
+                <div class="header-nav-c">
+                    <a href="#" class="header-nav-c-logo"><img class="header-nav-c-img" src="./img/header-logo.png" alt=""></a>
+                </div>      
+                <div class="header-nav-r">
+                    <a href="#" class="header-nav__link">MEDIA</a>
+                    <a href="#" class="header-nav__link">ESPORTS</a>
+                    <a href="#" class="header-nav__link header-nav__link--active">BUY NOW</a>
+                    <button class="header-nav-r-btn btn btn--primary">SUBSCRIBE</button>
+                </div>
             </nav>
-            <button class="btn btn--primary">SUBSCRIBE</button>
+            <nav class="header-nav-burger">
+                <a href="#" class="header-nav__link">NEWS</a>
+                    <a href="#" class="header-nav-burger__link">FIGHTERS</a>
+                    <a href="#" class="header-nav-burger__link">FEATURES</a>
+                    <a href="#" class="header-nav-burger__link">GUIDES</a>
+                    <a href="#" class="header-nav-burger__link">MEDIA</a>
+                    <a href="#" class="header-nav-burger__link">ESPORTS</a>
+                    <a href="#" class="header-nav-burger__link header-nav__link--active">BUY NOW</a>
+            </nav>
         </div>
     </header>
     <!-- /header -->
@@ -31,7 +51,7 @@
             <img src="./img/buy-now-bg-img.png" alt="">
         </div>
         <div class="section-buy-now-divider">
-            <button class="btn btn--primary">BUY NOW</button>
+            <button class="section-buy-now-divider-btn btn btn--primary">BUY NOW</button>
             <img class="img-divider" src="./img/divider-bg.png" alt="">
         </div>
     </section>
@@ -67,46 +87,48 @@
     <!-- characters -->
     <section class="section-outer section-characters">
         <div class="section-inner">
-            <h1 class="section-characters-h">CHARACTERS</h1>
-            <div class="characters-list">
-                <div class="characters-list__item">
-                    <img src="./img/characters-Aloy.png" alt="">
-                    <div class="characters-list__item-name">ALLOY</div>
+            <img class="section-characters-h" src="./img/characters-h.svg" alt="">
+            <div class="characters-wrapper">
+                <div class="characters-wrapper-left">
+                    <img src="./img/characters-Aloy-model.png" alt="" class="characters-wrapper-left-img">
                 </div>
-                <div class="characters-list__item">
-                    <img src="./img/characters-Emma.png" alt="">
-                    <div class="characters-list__item-name">EMMA</div>
-                </div>
-                <div class="characters-list__item">
-                    <img src="./img/characters-Mucha.png" alt="">
-                    <div class="characters-list__item-name">MUCHA</div>
-                </div>
-                <div class="characters-list__item">
-                    <img src="./img/characters-Karnov.png" alt="">
-                    <div class="characters-list__item-name">KARNOV</div>
-                </div>
-                <div class="characters-list__item">
-                    <img src="./img/characters-Jun.png" alt="">
-                    <div class="characters-list__item-name">JUN</div>
-                </div>
-                    <button class="btn btn--primary">PROTAGONISTS<span class="characters-list__button-icon"></span></button>  
-                </div>
-            </div>
-            <div class="current-character">
-                <div class="current-character-img">
-                    <img src="./img/characters-Aloy-model.png" alt="">
-                </div>
-                <div class="current-character-name">
-                    <h2 class="current-character-name-h">ALLOY</h2>
-                    <button class="btn btn--secondary">MORE INFO</button>
-                </div>
-                <div class="current-character-weapons">
-                    <img class="current-character-weapons-img" src="./img/characters-Aloy-weapons.png" alt="">
+                <div class="characters-wrapper-right">
+                    <div class="characters-list">
+                        <div class="characters-list__item">
+                            <img src="./img/characters-Aloy.png" alt="">
+                            <div class="characters-list__item-name">ALLOY</div>
+                        </div>
+                        <div class="characters-list__item">
+                            <img src="./img/characters-Emma.png" alt="">
+                            <div class="characters-list__item-name">EMMA</div>
+                        </div>
+                        <div class="characters-list__item">
+                            <img src="./img/characters-Mucha.png" alt="">
+                            <div class="characters-list__item-name">MUCHA</div>
+                        </div>
+                        <div class="characters-list__item">
+                            <img src="./img/characters-Karnov.png" alt="">
+                            <div class="characters-list__item-name">KARNOV</div>
+                        </div>
+                        <div class="characters-list__item">
+                            <img src="./img/characters-Jun.png" alt="">
+                            <div class="characters-list__item-name">JUN</div>
+                        </div>
+                            <button class="characters-list__btn btn btn--primary">PROTAGONISTS</button>
+                    </div>
+                    <div class="character-name">
+                        <h2 class="character-name-h">ALLOY</h2>
+                        <div class="character-name-btns">
+                            <button class="character-name-btns-btn btn btn--primary">PROTAGONISTS</button>
+                            <button class="character-name-btns-btn btn btn--secondary">MORE INFO</button>
+                        </div>
+                    </div>
+                    <div class="character-weapons">
+                        <img class="character-weapons-img" src="./img/characters-Aloy-weapons.png" alt="">
+                    </div>
                 </div>
             </div>
             <div class="socials">
-                <div class="socials-bg"><img class="socials-bg-img" src="./img/socials-bg-img.png" alt=""></div>
-                <h3 class="socials-h">STAY CONNECTED</h3>
                 <div class="socials-wrapper">
                     <div class="socials-wrapper-icons">
                         <a href="#" class="socials-wrapper-icons__item"><img class="socials-wrapper-icons__item-img" src="./img/socials-icon-facebook.png" alt=""></a>
@@ -120,11 +142,15 @@
                         <a href="#" class="socials-wrapper-links__item"><button class="btn socials-btn btn--no-bg">FACEBOOK</button></a>
                     </div>
                     <div class="socials-wrapper-btns">
-                        <button class="btn btn--no-bg">MORE NEWS</button>
-                        <button class="btn btn--primary">SUBSCRIBE</button>
+                        <button class="socials-wrapper-btns__item btn btn--no-bg">MORE NEWS</button>
+                        <button class="socials-wrapper-btns__item btn btn--primary">SUBSCRIBE</button>
                     </div>
                 </div>
+                <div class="socials-h">
+                    <img class="socials-h-img" src="./img/stay-connected-h.png" alt="">
+                </div>
             </div>
+            
         </div>
     </section>
     <!-- /characters -->
@@ -134,31 +160,26 @@
             <div class="gallery-wrapper">
                 <div class="gallery-wrapper__item">
                     <img class="gallery-wrapper__item-img" src="./img/gallery-img-1.png" alt="">
-                    <div class="image-filter"></div>
                     <div class="gallery-wrapper__item-h">NEWS</div>
                     <div class="gallery-wrapper__item-date">4 DAYS AGO</div>
                 </div>
                 <div class="gallery-wrapper__item">
                     <img class="gallery-wrapper__item-img" src="./img/gallery-img-2.png" alt="">
-                    <div class="image-filter"></div>
                     <div class="gallery-wrapper__item-h">TWITTER</div>
                     <div class="gallery-wrapper__item-date">4 DAYS AGO</div>
                 </div>
                 <div class="gallery-wrapper__item">
                     <img class="gallery-wrapper__item-img" src="./img/gallery-img-3.png" alt="">
-                    <div class="image-filter"></div>
                     <div class="gallery-wrapper__item-h">FACEBOOK</div>
                     <div class="gallery-wrapper__item-date">4 DAYS AGO</div>
                 </div>
                 <div class="gallery-wrapper__item">
                     <img class="gallery-wrapper__item-img" src="./img/gallery-img-4.png" alt="">
-                    <div class="image-filter"></div>
                     <div class="gallery-wrapper__item-h">TWITTER</div>
                     <div class="gallery-wrapper__item-date">4 DAYS AGO</div>
                 </div>
                 <div class="gallery-wrapper__item">
                     <img class="gallery-wrapper__item-img" src="./img/gallery-img-5.png" alt="">
-                    <div class="image-filter"></div>
                     <div class="gallery-wrapper__item-h">NEWS</div>
                     <div class="gallery-wrapper__item-date">4 DAYS AGO</div>
                 </div>
@@ -206,5 +227,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&display=swap" rel="stylesheet"> 
+    <script src="./js/scripts.js"></script>
 </body>
 </html>
