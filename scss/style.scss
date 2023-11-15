@@ -562,6 +562,7 @@ header{
             position: absolute;
             right: 10%;
             bottom: 20%;
+            display: flex;
             width: 20.68%;
             height: 24.24%;
             opacity: .9;
@@ -577,13 +578,12 @@ header{
 
             @media(max-width: $breakpoint-sm-max){
                 right: 0%;
-                bottom: -4.5%;
+                bottom: -12%;
                 width: auto;
-                height: 48.48%;
-                min-height: 30px;
+                height: 24.24%;
+                min-height: 20px;
 
                 &-btn{
-                    height: 50%;
                     font-size: $fs-m;
                 }
 
@@ -764,6 +764,7 @@ header{
         &__item{
             position: relative;
             flex-basis: 20%;
+            cursor: pointer;
             background-color: #000;
             box-shadow: 0 2px 33px #000;
 
